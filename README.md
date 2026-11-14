@@ -1,29 +1,31 @@
 # mr-termshell
 
-Консольный (TUI) файловый менеджер на **C++17** с использованием библиотеки **FTXUI**.
+> 🌐 **Language:** **English** | [Русский (README_Ru.md)](README_Ru.md)
 
-## ✨ Возможности
-- 📁 Быстрая навигация по файловой системе с иконками типов файлов
-- 🔍 Мгновенная фильтрация и сортировка файлов в текущей директории
-- 📋 Встроенный буфер обмена (копирование, перемещение, удаление, создание файлов и папок)
-- 🖼️ Предпросмотр текстовых файлов и изображений прямо в терминале
-- ⚡ Выполнение shell-команд без выхода из файлового менеджера
+A fast terminal user interface (TUI) file manager written in **C++17** using the **FTXUI** library.
 
-## 🛠️ Сборка и запуск
+## ✨ Features
+- 📁 Rapid filesystem navigation with file-type icons
+- 🔍 Instant file filtering and sorting in the current directory
+- 📋 Built-in clipboard operations (copy, move, delete, create files and directories)
+- 🖼️ In-terminal preview for text files and images
+- ⚡ Execute shell commands directly without leaving the file manager
 
-### Требования
+## 🛠️ Building & Running
+
+### Requirements
 - CMake >= 3.14
-- Компилятор с поддержкой C++17 (GCC / Clang)
-- Git (для автоматической загрузки FTXUI через `FetchContent`)
+- C++17-compatible compiler (GCC / Clang)
+- Git (for fetching FTXUI automatically via CMake `FetchContent`)
 
-### Сборка
+### Build
 ```bash
 mkdir -p build && cd build
 cmake ..
 cmake --build . -j$(nproc)
 ```
 
-### Запуск
+### Run
 ```bash
 ./build/mr-termshell
 ```
