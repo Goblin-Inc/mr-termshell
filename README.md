@@ -29,3 +29,6 @@ cmake --build . -j$(nproc)
 ```bash
 ./build/mr-termshell
 ```
+
+## 📄 License
+MIT © [Goblin-Inc](https://github.com/Goblin-Inc)
